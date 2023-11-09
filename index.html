@@ -2,14 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>My first three.js app</title>
-    <style>
-        body {
-            margin: 0;
-        }
-    </style>
-    <script type="importmap">
+  <meta charset="utf-8">
+  <title>My first three.js app</title>
+  <link href="index.css" rel="stylesheet">
+  <script type="importmap">
             {
               "imports": {
                 "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
@@ -17,10 +13,15 @@
               }
             }
           </script>
+  <script type="module" src="main.js"></script>
 </head>
 
 <body>
-    <script type="module" src="main.js"></script>
+  <div class="container">
+    <div id="canvas"></div>
+    <div id="options"></div>
+  </div>
 </body>
+
 
 </html>
